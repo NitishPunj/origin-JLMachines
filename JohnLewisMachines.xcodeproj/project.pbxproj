@@ -11,6 +11,7 @@
 		036429431E60B01D008B1DD7 /* JLFeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036429421E60B01D008B1DD7 /* JLFeatureTableViewCell.swift */; };
 		036429451E60B043008B1DD7 /* JLInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036429441E60B043008B1DD7 /* JLInfoTableViewCell.swift */; };
 		036429471E60EEA6008B1DD7 /* JLDetailPageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036429461E60EEA5008B1DD7 /* JLDetailPageViewCell.swift */; };
+		03A9D6DE1E65EFA900686A4D /* WebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D6DD1E65EFA900686A4D /* WebServiceTests.swift */; };
 		03FE07BA1E5F01C0006FE975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE07B91E5F01C0006FE975 /* AppDelegate.swift */; };
 		03FE07BF1E5F01C0006FE975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FE07BD1E5F01C0006FE975 /* Main.storyboard */; };
 		03FE07C21E5F01C1006FE975 /* JohnLewisMachines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03FE07C01E5F01C1006FE975 /* JohnLewisMachines.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 		036429421E60B01D008B1DD7 /* JLFeatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLFeatureTableViewCell.swift; sourceTree = "<group>"; };
 		036429441E60B043008B1DD7 /* JLInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLInfoTableViewCell.swift; sourceTree = "<group>"; };
 		036429461E60EEA5008B1DD7 /* JLDetailPageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLDetailPageViewCell.swift; sourceTree = "<group>"; };
+		03A9D6DD1E65EFA900686A4D /* WebServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceTests.swift; sourceTree = "<group>"; };
 		03FE07B61E5F01C0006FE975 /* JohnLewisMachines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JohnLewisMachines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FE07B91E5F01C0006FE975 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FE07BE1E5F01C0006FE975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				03FE07D11E5F01C2006FE975 /* JohnLewisMachinesTests.swift */,
 				03FE07D31E5F01C2006FE975 /* Info.plist */,
+				03A9D6DD1E65EFA900686A4D /* WebServiceTests.swift */,
 			);
 			path = JohnLewisMachinesTests;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A9D6DE1E65EFA900686A4D /* WebServiceTests.swift in Sources */,
 				03FE07D21E5F01C2006FE975 /* JohnLewisMachinesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

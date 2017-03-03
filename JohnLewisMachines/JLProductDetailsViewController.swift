@@ -26,10 +26,13 @@ class JLProductDetailsViewController: UIViewController,UITableViewDelegate,UITab
    public var value:String!
     
    
+    @IBOutlet weak var widthSide: NSLayoutConstraint!
     var imgArray:[String] = []
     var json:JSON!
     var attributesArray:[JSON] = []
+    @IBOutlet weak var mainView: UIView!
 
+    @IBOutlet weak var sideView: UIView!
     @IBOutlet weak var imgCollcetionView: UICollectionView!
     @IBOutlet weak var detailsTable: UITableView!
     
@@ -56,7 +59,9 @@ class JLProductDetailsViewController: UIViewController,UITableViewDelegate,UITab
         imgCollcetionView.alpha = 0
         detailsTable.alpha = 0
         
-
+NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        
+        
         ARSLineProgress.show()
         ConnectionFile.sharedInstance.fetchProductInfo(productID: value){response in
             self.json = JSON(response!)
@@ -70,6 +75,58 @@ class JLProductDetailsViewController: UIViewController,UITableViewDelegate,UITab
   
         // Do any additional setup after loading the view.
     }
+    
+    func rotated() {
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+            print("Landscape")
+            
+            
+            widthSide.constant =  self.view.bounds.size.width/3.0
+//            self.mainView.bounds.size.width = self.view.bounds.size.width/2.0
+//           // self.mainView.layoutSubviews()
+            
+//            self.sideView.bounds.size.width = self.view.bounds.size.width/2.0 - 20 ;
+            let label = UILabel(frame : CGRect(x: self.sideView.frame.origin.x, y: self.sideView.frame.origin.y, width: 200, height: 61))
+    
+          label.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+            
+            
+            label.textAlignment = .center
+            label.text = "£" + json["price"]["now"].string! + "/n" +
+json["displaySpecialOffer"].string!
+            
+            self.sideView.addSubview(label)
+            
+          
+            
+            
+                   }
+        
+        
+        
+        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+            print("Portrait")
+            
+            
+            widthSide.constant = 0.0
+            
+            self.mainView.bounds.size.width = self.view.bounds.size.width
+//  self.mainView.layoutSubviews()
+        
+            
+            for view in self.sideView.subviews {
+                view.removeFromSuperview()
+            }
+            
+           // self.sideView.bounds.size.width = 0
+       
+        
+        }
+        self.viewWillLayoutSubviews()
+    }
+    
+    
+    
     
     //Orientation change for collcetionview
     override func viewWillLayoutSubviews() {
@@ -225,7 +282,11 @@ class JLProductDetailsViewController: UIViewController,UITableViewDelegate,UITab
      }
      */
     
-
+  func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator){
+    
+    
+    
+    }
     
     
     

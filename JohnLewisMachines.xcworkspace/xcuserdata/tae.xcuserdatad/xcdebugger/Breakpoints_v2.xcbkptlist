@@ -2,4 +2,100 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JohnLewisMachines/JLGridViewController.swift"
+            timestampString = "509996431.22335"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "JLGridViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JohnLewisMachines.JLGridViewController.gridView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UICollectionView&gt;"
+                  moduleName = "JohnLewisMachines"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tae/Documents/JohnLewisMachines/JohnLewisMachines/JLGridViewController.swift"
+                  timestampString = "509996439.921036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JohnLewisMachines.JLGridViewController.gridView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UICollectionView&gt;"
+                  moduleName = "JohnLewisMachines"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tae/Documents/JohnLewisMachines/JohnLewisMachines/JLGridViewController.swift"
+                  timestampString = "509996439.984573"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JohnLewisMachines.JLGridViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; JohnLewisMachines.JLGridViewController"
+                  moduleName = "JohnLewisMachines"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tae/Documents/JohnLewisMachines/JohnLewisMachines/JLGridViewController.swift"
+                  timestampString = "509996439.98864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JohnLewisMachines.JLGridViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;JohnLewisMachines.JLGridViewController&gt;"
+                  moduleName = "JohnLewisMachines"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tae/Documents/JohnLewisMachines/JohnLewisMachines/JLGridViewController.swift"
+                  timestampString = "509996439.991865"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JohnLewisMachinesTests/WebServiceTests.swift"
+            timestampString = "510061788.362999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "testProductDataFromApi()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
